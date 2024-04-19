@@ -17,7 +17,7 @@ type Props = {
 const { title, description, via } = Astro.props;
 ---
 
-<div class="flex gap-2" class:list={Astro.props.class}>
+<div class="flex gap-2 fill-gray-700 dark:fill-gray-200" class:list={Astro.props.class}>
   <FacebookShareButton />
   <LinkedInShareButton />
   <RedditShareButton {title} />
